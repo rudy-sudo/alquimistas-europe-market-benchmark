@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmark Estratégico: Alquimistas AI - Mercado Europeo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: #f3f4f6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #1f2937;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+        .bg-vibrant-blue { background-color: #1E3A8A; }
+        .text-vibrant-blue { color: #1E3A8A; }
+        .bg-vibrant-orange { background-color: #F97316; }
+        .text-vibrant-orange { color: #F97316; }
+        .bg-vibrant-teal { background-color: #14B8A6; }
+        .text-vibrant-teal { color: #14B8A6; }
+        .bg-vibrant-purple { background-color: #8B5CF6; }
+        .border-vibrant-purple { border-color: #8B5CF6; }
+        
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+        }
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to right, #1E3A8A, #8B5CF6);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-vibrant-blue text-white py-12 px-6 shadow-xl mb-10">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Estrategia de Mercado y Pricing: Alquimistas</h1>
+            <h2 class="text-xl md:text-2xl font-light opacity-90">Benchmark Europeo (UK, ESP, GER) y Posicionamiento B2B/B2C</h2>
+            <div class="mt-6 inline-block bg-vibrant-orange text-white px-4 py-2 rounded-full font-semibold text-sm">
+                Consultoría de Estrategia EdTech
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+        <section class="lg:col-span-2">
+            <div class="card">
+                <h3 class="text-2xl font-bold mb-4 text-vibrant-blue border-b-2 border-gray-100 pb-2">1. Resumen Ejecutivo y Propuesta de Valor</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    El programa <strong>Alquimistas</strong> entra en un mercado europeo saturado de "cursos de prompt engineering" básicos, pero carente de formación en arquitecturas cognitivas complejas. La gran ventaja competitiva reside en la transición de un enfoque táctico (usar ChatGPT) a un enfoque estratégico y sistémico (SOPs Cognitivos, Supervisor-Worker), respaldado por la <strong>Certificación ISO</strong>.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                    <div class="bg-blue-50 p-4 rounded-lg border-l-4 border-vibrant-blue">
+                        <span class="text-3xl font-bold text-vibrant-blue mb-2 block">El Problema</span>
+                        <p class="text-sm">El mercado europeo sufre de fatiga de IA superficial. Las empresas invierten en licencias (Copilot, ChatGPT Enterprise) pero la adopción profunda es inferior al 15% por falta de workflows Senior.</p>
+                    </div>
+                    <div class="bg-purple-50 p-4 rounded-lg border-l-4 border-vibrant-purple">
+                        <span class="text-3xl font-bold text-vibrant-purple mb-2 block">La Solución</span>
+                        <p class="text-sm">Los 4 Sprints de Alquimistas: Mindset, SOPs Cognitivos, Arquitecturas Multi-Agente y Productización, generando talento capaz de crear ecosistemas, no solo prompts aislados.</p>
+                    </div>
+                    <div class="bg-orange-50 p-4 rounded-lg border-l-4 border-vibrant-orange">
+                        <span class="text-3xl font-bold text-vibrant-orange mb-2 block">El Diferenciador</span>
+                        <p class="text-sm">Certificación ISO con valor curricular oficial en la UE, frente a los certificados de participación sin peso regulatorio de Udemy, Coursera o Section.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lg:col-span-2">
+            <div class="card">
+                <h3 class="text-2xl font-bold mb-4 text-vibrant-blue border-b-2 border-gray-100 pb-2">2. Análisis de Competidores en Europa</h3>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    Se han identificado 5 competidores clave en el mercado europeo orientados a líderes y profesionales. El mercado se divide entre Escuelas de Negocios (alto prestigio, baja profundidad técnica), Plataformas de Sprints (agilidad, certificaciones propias) y Bootcamps Técnicos.
+                </p>
+                
+                <div class="overflow-x-auto">
+                    <table class="min-w-full text-left text-sm whitespace-nowrap">
+                        <thead class="uppercase tracking-wider border-b-2 border-gray-200 bg-gray-50 text-gray-600">
+                            <tr>
+                                <th scope="col" class="px-6 py-4">Programa / Institución</th>
+                                <th scope="col" class="px-6 py-4">Precio B2C (Aprox)</th>
+                                <th scope="col" class="px-6 py-4">Duración</th>
+                                <th scope="col" class="px-6 py-4">Tipo de Certificación</th>
+                                <th scope="col" class="px-6 py-4">Enfoque Principal</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900">Oxford (AI for Business)</th>
+                                <td class="px-6 py-4">€ 2,800 - € 3,200</td>
+                                <td class="px-6 py-4">6 Semanas</td>
+                                <td class="px-6 py-4">Certificado Institucional</td>
+                                <td class="px-6 py-4 text-gray-500">Estrategia ejecutiva, bajo nivel técnico.</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900">IE Business School (AI Prog)</th>
+                                <td class="px-6 py-4">€ 2,500 - € 4,000</td>
+                                <td class="px-6 py-4">5 - 8 Semanas</td>
+                                <td class="px-6 py-4">Certificado Institucional</td>
+                                <td class="px-6 py-4 text-gray-500">Gestión de innovación, casos de estudio.</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900">Section (AI Mini-MBA)</th>
+                                <td class="px-6 py-4">€ 950 - € 1,200</td>
+                                <td class="px-6 py-4">4 Semanas</td>
+                                <td class="px-6 py-4">Badge Digital Propio</td>
+                                <td class="px-6 py-4 text-gray-500">Agilidad, frameworks rápidos, táctico.</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900">altMBA (Módulo Tech/AI)</th>
+                                <td class="px-6 py-4">€ 4,500</td>
+                                <td class="px-6 py-4">4 Semanas</td>
+                                <td class="px-6 py-4">Certificado de Cohorte</td>
+                                <td class="px-6 py-4 text-gray-500">Mindset, liderazgo, colaboración.</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900">Le Wagon / Ironhack (Data/AI)</th>
+                                <td class="px-6 py-4">€ 6,500 - € 8,000</td>
+                                <td class="px-6 py-4">9 Semanas (Full)</td>
+                                <td class="px-6 py-4">Certificado Bootcamp</td>
+                                <td class="px-6 py-4 text-gray-500">Programación dura, Python, ML (No prompting puro).</td>
+                            </tr>
+                            <tr class="bg-blue-50 border-l-4 border-vibrant-blue">
+                                <th scope="row" class="px-6 py-4 font-bold text-vibrant-blue">Alquimistas</th>
+                                <td class="px-6 py-4 font-bold">Por Definir</td>
+                                <td class="px-6 py-4 font-bold">4 Sprints</td>
+                                <td class="px-6 py-4 font-bold text-vibrant-orange">Certificación ISO Oficial</td>
+                                <td class="px-6 py-4 text-vibrant-blue font-medium">SOPs Cognitivos, Arquitectura AI, Productización.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="card">
+                <h3 class="text-xl font-bold mb-2 text-vibrant-blue">Posicionamiento en el Mercado Europeo</h3>
+                <p class="text-sm text-gray-600 mb-6">Mapeo de la competencia basado en la profundidad técnica del programa frente al peso curricular de su certificación en Europa.</p>
+                <div class="chart-container">
+                    <canvas id="positioningChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="card">
+                <h3 class="text-xl font-bold mb-2 text-vibrant-blue">Gap Analysis: Competencias del Alquimista</h3>
+                <p class="text-sm text-gray-600 mb-6">Comparativa de la profundidad del temario (Sprints 1-4) de Alquimistas frente al promedio de formaciones ejecutivas europeas.</p>
+                <div class="chart-container">
+                    <canvas id="gapChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section class="lg:col-span-2">
+            <div class="card bg-gray-900 text-white">
+                <h3 class="text-2xl font-bold mb-4 text-vibrant-teal border-b-2 border-gray-700 pb-2">3. El Valor de la Certificación ISO en Europa</h3>
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    En el mercado europeo (altamente regulado por marcos como la AI Act), las empresas desconfían de los certificados auto-emitidos. La norma ISO aporta una ventaja B2B inigualable.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold text-vibrant-orange mb-3">Impacto B2B (Corporativo)</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-vibrant-teal mr-2">✦</span>
+                                <span class="text-sm"><strong>Cumplimiento Normativo:</strong> Facilita auditorías de proveedores y compliance interno, al demostrar que el personal tiene competencias estandarizadas.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-vibrant-teal mr-2">✦</span>
+                                <span class="text-sm"><strong>Subvenciones (FUNDAE en España):</strong> Los programas con certificación oficial son más fáciles de justificar para recibir bonificaciones de formación estatal.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-vibrant-teal mr-2">✦</span>
+                                <span class="text-sm"><strong>Estandarización de Workflows:</strong> Garantiza que el equipo adopta protocolos seguros y estructurados, no solo "prompts creativos".</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-vibrant-orange mb-3">Impacto B2C (Profesionales)</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-vibrant-purple mr-2">✦</span>
+                                <span class="text-sm"><strong>Diferenciación Curricular (CV):</strong> Un sello ISO destaca inmediatamente en LinkedIn y sistemas ATS frente a miles de certificados de Coursera.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-vibrant-purple mr-2">✦</span>
+                                <span class="text-sm"><strong>Movilidad Laboral en la UE:</strong> Los estándares ISO son reconocidos transfronterizamente, facilitando la validación de skills entre Alemania, España y UK.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-vibrant-purple mr-2">✦</span>
+                                <span class="text-sm"><strong>Justificación de Inversión (ROI):</strong> El profesional percibe que invierte en un activo oficial, no solo en un gasto de consumo digital.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="card">
+                <h3 class="text-xl font-bold mb-2 text-vibrant-blue">Rangos de Precio B2C en Europa</h3>
+                <p class="text-sm text-gray-600 mb-6">Distribución de precios para programas de intensidad media-alta (4-8 semanas).</p>
+                <div class="chart-container">
+                    <canvas id="pricingChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="card h-full flex flex-col justify-center bg-blue-50 border-2 border-vibrant-blue">
+                <h3 class="text-2xl font-extrabold mb-4 text-center text-vibrant-blue">Sugerencia de Tiers (Alquimistas)</h3>
+                
+                <div class="bg-white rounded-lg p-4 shadow mb-4 border-l-4 border-vibrant-purple">
+                    <h4 class="font-bold text-gray-800 text-lg">B2C - Profesional Independiente</h4>
+                    <p class="text-3xl font-black gradient-text my-2">€ 1,850 - € 2,450</p>
+                    <p class="text-xs text-gray-500">Posicionamiento premium accesible. Más caro que Section (agregando el valor de la Certificación ISO y mayor profundidad), pero por debajo del ticket psicológico de €3,000 de Escuelas de Negocio.</p>
+                </div>
+
+                <div class="bg-gray-900 rounded-lg p-4 shadow border-l-4 border-vibrant-teal">
+                    <h4 class="font-bold text-white text-lg">B2B - Corporate Cohort (10-15 pax)</h4>
+                    <p class="text-3xl font-black text-vibrant-teal my-2">€ 15,000 - € 22,000</p>
+                    <p class="text-xs text-gray-400">Incluye personalización de SOPs a la empresa, reportes de desempeño y emisión de certificaciones ISO para todo el equipo clave. Promedio de €1,500 por asiento B2B.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="lg:col-span-2">
+            <div class="card">
+                <h3 class="text-2xl font-bold mb-6 text-vibrant-blue border-b-2 border-gray-100 pb-2">4. Narrativa de Ventas (El Viaje del Héroe B2B/B2C)</h3>
+                <p class="text-gray-700 leading-relaxed mb-8">
+                    Para capitalizar el precio premium, la comunicación debe alejarse del "Aprende a usar IA" y centrarse en la "Arquitectura y Estandarización de Procesos Cognitivos".
+                </p>
+
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4 relative">
+                    <div class="absolute hidden md:block w-full h-1 bg-gray-200 top-1/2 transform -translate-y-1/2 z-0"></div>
+                    
+                    <div class="bg-white z-10 border-2 border-gray-200 rounded-xl p-6 w-full md:w-1/3 text-center shadow-sm hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold text-gray-400">1</div>
+                        <h4 class="font-bold text-gray-800 mb-2">El Problema Actual</h4>
+                        <p class="text-sm text-gray-600">"Tu equipo sabe hacer prompts, pero sus procesos no son escalables, seguros ni repetibles. Operan como artesanos, no como ingenieros."</p>
+                    </div>
+
+                    <div class="bg-white z-10 border-2 border-vibrant-orange rounded-xl p-6 w-full md:w-1/3 text-center shadow-lg transform md:-translate-y-4">
+                        <div class="w-12 h-12 bg-vibrant-orange text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
+                        <h4 class="font-bold text-vibrant-orange mb-2">La Transformación</h4>
+                        <p class="text-sm text-gray-600">"Alquimistas te entrena en Arquitecturas Supervisor-Worker y SOPs Cognitivos. Pasas de tareas aisladas a ecosistemas de automatización."</p>
+                    </div>
+
+                    <div class="bg-white z-10 border-2 border-vibrant-blue rounded-xl p-6 w-full md:w-1/3 text-center shadow-sm hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-vibrant-blue text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">3</div>
+                        <h4 class="font-bold text-vibrant-blue mb-2">La Garantía ISO</h4>
+                        <p class="text-sm text-gray-600">"Todo validado bajo Norma ISO. No recibes un diploma de asistencia, obtienes un certificado de competencias oficial válido en toda Europa."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center mt-12">
+        <p class="text-sm">Generado por Canvas Infographics - Estrategia de Pricing y Mercado</p>
+        <p class="text-xs mt-2 opacity-50">Visualizaciones renderizadas con Canvas (Chart.js) | No SVG | No Mermaid</p>
+    </footer>
+
+    <script>
+        function wrapLabel(label) {
+            if (label.length <= 16) return label;
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = words[0];
+            for (let i = 1; i < words.length; i++) {
+                if (currentLine.length + 1 + words[i].length <= 16) {
+                    currentLine += ' ' + words[i];
+                } else {
+                    lines.push(currentLine);
+                    currentLine = words[i];
+                }
+            }
+            lines.push(currentLine);
+            return lines;
+        }
+
+        const tooltipConfig = {
+            callbacks: {
+                title: function(tooltipItems) {
+                    const item = tooltipItems[0];
+                    let label = item.chart.data.labels[item.dataIndex];
+                    if (Array.isArray(label)) {
+                        return label.join(' ');
+                    } else {
+                        return label;
+                    }
+                }
+            }
+        };
+
+        const ctxPositioning = document.getElementById('positioningChart').getContext('2d');
+        new Chart(ctxPositioning, {
+            type: 'scatter',
+            data: {
+                datasets: [
+                    {
+                        label: 'Escuelas de Negocio (IE, Oxford)',
+                        data: [{x: 3, y: 7}],
+                        backgroundColor: '#8B5CF6',
+                        pointRadius: 10,
+                        pointHoverRadius: 12
+                    },
+                    {
+                        label: 'Plataformas Ágiles (Section)',
+                        data: [{x: 4, y: 3}],
+                        backgroundColor: '#14B8A6',
+                        pointRadius: 10,
+                        pointHoverRadius: 12
+                    },
+                    {
+                        label: 'Bootcamps (Le Wagon)',
+                        data: [{x: 9, y: 4}],
+                        backgroundColor: '#1F2937',
+                        pointRadius: 10,
+                        pointHoverRadius: 12
+                    },
+                    {
+                        label: 'Alquimistas',
+                        data: [{x: 8.5, y: 9.5}],
+                        backgroundColor: '#F97316',
+                        pointRadius: 15,
+                        pointHoverRadius: 18,
+                        pointStyle: 'star'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        title: { display: true, text: 'Profundidad Técnica y Arquitecturas (1-10)' },
+                        min: 0, max: 10
+                    },
+                    y: {
+                        title: { display: true, text: 'Valor y Reconocimiento de Certificación (1-10)' },
+                        min: 0, max: 10
+                    }
+                },
+                plugins: {
+                    legend: { position: 'bottom' },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.dataset.label + ': Técnica (' + context.raw.x + '), Cert. (' + context.raw.y + ')';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        const labelsGapOriginal = [
+            "Bases y Mindset IA", 
+            "Herramientas Tácticas Básicas", 
+            "Creación de SOPs Cognitivos", 
+            "Arquitecturas Supervisor-Worker", 
+            "Prompting Modular y Anidado",
+            "Productización de IA"
+        ];
+        const labelsGap = labelsGapOriginal.map(wrapLabel);
+
+        const ctxGap = document.getElementById('gapChart').getContext('2d');
+        new Chart(ctxGap, {
+            type: 'radar',
+            data: {
+                labels: labelsGap,
+                datasets: [
+                    {
+                        label: 'Alquimistas (Sprints 1-4)',
+                        data: [9, 8, 10, 9, 9, 8],
+                        backgroundColor: 'rgba(249, 115, 22, 0.4)',
+                        borderColor: '#F97316',
+                        borderWidth: 2,
+                        pointBackgroundColor: '#F97316'
+                    },
+                    {
+                        label: 'Promedio Mercado B2C/B2B',
+                        data: [8, 9, 3, 2, 4, 3],
+                        backgroundColor: 'rgba(30, 58, 138, 0.4)',
+                        borderColor: '#1E3A8A',
+                        borderWidth: 2,
+                        pointBackgroundColor: '#1E3A8A'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        angleLines: { display: true },
+                        suggestedMin: 0,
+                        suggestedMax: 10
+                    }
+                },
+                plugins: {
+                    legend: { position: 'bottom' },
+                    tooltip: tooltipConfig
+                }
+            }
+        });
+
+        const labelsPricingOriginal = [
+            "Micro-Cursos (Udemy)",
+            "Plataformas Ágiles (Section)",
+            "Alquimistas (Propuesto)",
+            "Escuelas Negocio (Oxford/IE)",
+            "Bootcamps Técnicos"
+        ];
+        const labelsPricing = labelsPricingOriginal.map(wrapLabel);
+
+        const ctxPricing = document.getElementById('pricingChart').getContext('2d');
+        new Chart(ctxPricing, {
+            type: 'bar',
+            data: {
+                labels: labelsPricing,
+                datasets: [{
+                    label: 'Rango de Precios B2C (€)',
+                    data: [150, 1100, 2150, 3200, 6500],
+                    backgroundColor: [
+                        '#9CA3AF',
+                        '#14B8A6',
+                        '#F97316',
+                        '#8B5CF6',
+                        '#1F2937'
+                    ],
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                indexAxis: 'y',
+                scales: {
+                    x: {
+                        title: { display: true, text: 'Euros (€)' },
+                        beginAtZero: true
+                    }
+                },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: tooltipConfig
+                }
+            }
+        });
+    </script>
+</body>
+</html>
